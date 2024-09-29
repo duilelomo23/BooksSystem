@@ -1,0 +1,15 @@
+{
+    "mysql":{
+        "host":"localhost", 
+        "port":3306,
+        "user":"root",
+        "password":"12345678",
+        "db":"todo_db",
+        "charset":"utf8mb4"
+    },
+    "app":{
+        "host":"0.0.0.0", 
+        "port":8083,
+        "debug":true
+    }
+}
