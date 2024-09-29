@@ -35,12 +35,29 @@ CREATE TABLE `user` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Table structure for table `user`
+--
+
+DROP TABLE IF EXISTS `user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `user` (
+  `user_id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(45) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  PRIMARY KEY (`user_id`),
+  UNIQUE KEY `username_UNIQUE` (`username`),
+  UNIQUE KEY `user_id_UNIQUE` (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Dumping data for table `user`
 --
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'bypass','987654'),(2,'miss','aA456789'),(3,'secret','123456'),(10,'duilelomo','ji394su3'),(11,'duilelomo123','我我我我我我我我我我我我我');
+INSERT INTO `user` VALUES (1,'bypass','$2b$12$rlULx.V/1u1BqojahgmjaOXXfkrjPBdZBOMvPaZabn8gUusc1M3G.'),(2,'miss','$2b$12$xBN9WYI.xBDKhDuwaYR68.NQT25naSoNEKzs5uAbEAL8.wtZA38q.'),(3,'secret','$2b$12$VmhGRJtYuaP/uUFBJd.tXuvFEG6j7Zjr4AB2MUxO3jXuPg/TL3vKe'),(4,'duilelomo','$2b$12$YNbiCsNxpy6thLexwWEeLOP7ai6HKzEBm7nCmUUQaBHUtMybwKiD2'),(7,'ting123','$2b$12$fudx/NrIxGJwGr5ELqXzn.zyCi/6E8jWVhWRNNb3WFNKjGgEtyUC6');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,7 +70,7 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-09-29 22:01:
+-- Dump completed on 2024-09-30  1:56:58
 
 --
 -- Table structure for table `book`
