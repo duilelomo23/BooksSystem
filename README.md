@@ -17,10 +17,10 @@
 
 #### 要求：
 
-1.  **POST** `**/users/register**`：用戶註冊（傳入 `username` 和 `password`），儲存用戶資訊
+1.  **POST** `**/users/register**`：用戶註冊 password使用hash加密（傳入 `username` 和 `password`），儲存用戶資訊
 2.  **POST** `**/users/login**`：用戶登入（傳入 `username` 和 `password`） username存入session['useranme']
 3.  **POST** `**/users/register**`：用戶登出,移除session['username']
-4.  **GET** `**/users**`：獲取所有註冊用戶的列表。
+4.  **GET** `**/users**`：獲取所有註冊用戶的列表,(裝飾器判斷登入狀態,登入帳號才可使用)
 5.  **GET** `**/users/<int:id>**`：查詢特定使用者的資料。
 6.  **PUT** `**/users/<int:id>**`：更新使用者資料（傳入 `username` 和 `password`）。
 7.  **DELETE** `**/users/<int:id>**`：刪除使用者資料。
