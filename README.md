@@ -18,10 +18,12 @@
 #### 要求：
 
 1.  **POST** `**/users/register**`：用戶註冊（傳入 `username` 和 `password`），儲存用戶資訊
-2.  **GET** `**/users**`：獲取所有註冊用戶的列表。
-3.  **GET** `**/users/<int:id>**`：查詢特定使用者的資料。
-4.  **PUT** `**/users/<int:id>**`：更新使用者資料（傳入 `username` 和 `password`）。
-5.  **DELETE** `**/users/<int:id>**`：刪除使用者資料。
+2.  **POST** `**/users/login**`：用戶登入（傳入 `username` 和 `password`） username存入session['useranme']
+3.  **POST** `**/users/register**`：用戶登出
+4.  **GET** `**/users**`：獲取所有註冊用戶的列表。
+5.  **GET** `**/users/<int:id>**`：查詢特定使用者的資料。
+6.  **PUT** `**/users/<int:id>**`：更新使用者資料（傳入 `username` 和 `password`）。
+7.  **DELETE** `**/users/<int:id>**`：刪除使用者資料。
 
 ### 練習題 3: 簡易書籍管理 API
 
