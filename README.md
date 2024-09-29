@@ -17,8 +17,8 @@
 
 #### 要求：
 
-1.  **POST** `**/users/register**`：用戶註冊 password使用hash加密（傳入 `username` 和 `password`），儲存用戶資訊
-2.  **POST** `**/users/login**`：用戶登入（傳入 `username` 和 `password`） username存入session['useranme']
+1.  **POST** `**/users/register**`：用戶註冊 password使用hash加密，sql儲存用戶資訊（傳入 `username` 和 `password`）
+2.  **POST** `**/users/login**`：用戶登入 username存入session['useranme']  （傳入 `username` 和 `password`）
 3.  **POST** `**/users/register**`：用戶登出,移除session['username']
 4.  **GET** `**/users**`：獲取所有註冊用戶的列表,(裝飾器判斷登入狀態,登入帳號才可使用)
 5.  **GET** `**/users/<int:id>**`：查詢特定使用者的資料。
