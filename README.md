@@ -47,36 +47,36 @@
 
 ### 4\. MYSQL
 
-###                                     1.資料庫關聯
+###       1.資料庫關聯
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/32bafc8c0b8b6240a3ad6ccdb4fd927528a6324bf03dd1e5.png)
 
 ### 5 呼叫api
 
-###                                    1.註冊 
+###       1.註冊 
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/c4bdac17b26fef4c510a9b406af7548d379cfbd7a1afd4ce.png)
 
-###                                   2. 重複註冊
+###       2. 重複註冊
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/73dc68a082b57cda15873726290d9f982c89698b3cf5bddc.png)
 
-###                                   3.登入
+###       3.登入
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/3f86ef9a5eb01be95ff8a76e6ccf2e70f689f7c72f2f82f0.png)
 
-###                                   4.呼叫 get /users api   獲取所有使用者資料
+###       4.呼叫 get /users api   獲取所有使用者資料
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/6906b05c94e05c28a9cb430acefbe1baf9c90a5a09f50d76.png)
 
-###                                     5. 呼叫 get /user\_id/get\_all  獲取user\_id所有購買紀錄資料
+###       5. 呼叫 get /user\_id/get\_all  獲取user\_id所有購買紀錄資料
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/2e8c259b6af745231161f99a33af83786a02eddd94bea0f6.png)
 
-###                                      6.登出
+###       6.登出
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/66fe9004b6f3af85909b093dbf33784950597520c047c25a.png)
 
-###                                      7.未登入呼叫API retrun error
+###       7.未登入呼叫API retrun error
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/5f99e8a1a26cb45ecb364bbf782e4430d365bcb8b6828bec.png)
