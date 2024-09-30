@@ -47,11 +47,7 @@
 
 ### 4\. MYSQL
 
-###                                    1.測試帳號
-
-<table><tbody><tr><td>user_id &nbsp; &nbsp;</td><td>username &nbsp;&nbsp;</td><td>password &nbsp; &nbsp;</td></tr><tr><td>1</td><td>bypass&nbsp;</td><td>123456</td></tr><tr><td>2</td><td>miss</td><td>a123456</td></tr><tr><td>3</td><td>secret</td><td>secret123</td></tr><tr><td>4</td><td>duilelomo</td><td>111111</td></tr></tbody></table>
-
-###                                   2.資料庫關聯圖
+###                                     1.資料庫關聯
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/32bafc8c0b8b6240a3ad6ccdb4fd927528a6324bf03dd1e5.png)
 
