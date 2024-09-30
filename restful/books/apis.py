@@ -115,7 +115,7 @@ def delete_book(book_id):
 #user_book api
 
 #搜索 user_id 是否擁有 book_id
-@blueprint.route('/<user_id>/book/<book_id>', methods=["GET"])
+@blueprint.route('/<user_id>/<book_id>', methods=["GET"])
 def get_user_updata_book_record(user_id, book_id):
 
     #1. 解析JSON或參數
@@ -132,18 +132,18 @@ def get_user_updata_book_record(user_id, book_id):
     if  isinstance(book_id, int) == False or \
         isinstance(user_id, int) == False:
         return json.jsonify(errors.e2002)
-    if datahelper.serch_book_and_user_id_update_existed(user_id, book_id) == 0:
+    if datahelper.serch_book_and_user_id_update_existed(user_id) == 0:
         return json.jsonify(errors.e2002)
 
     #3. 取得產品
-    s = datahelper.serch_user_book_date(user_id ,book_id)
+    s = datahelper.serch_user_book_date(user_id, book_id)
    #4. 回傳產品
 
     return json.jsonify(make_data_result(s))
 
 
 #搜索user_id 購買所有紀錄
-@blueprint.route('/<user_id>/book/get_all', methods=["GET"])
+@blueprint.route('/<user_id>/get_all', methods=["GET"])
 def get_user_all_book_record(user_id):
 
     #1. 解析JSON或參數
@@ -165,7 +165,7 @@ def get_user_all_book_record(user_id):
 
 
 #新增購買紀錄  
-@blueprint.route('/<user_id>/book/<book_id>', methods=["POST"])
+@blueprint.route('/<user_id>/<book_id>', methods=["POST"])
 def create_update_book_record(user_id, book_id):
     #1. 解析JSON或參數
     # x = json.loads(request.data)

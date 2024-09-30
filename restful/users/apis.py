@@ -2,7 +2,7 @@ from flask import Blueprint, request, json, g, session
 from dacite import from_dict
 from dacite_config import config
 from users import dataclasses, datahelper, errors
-from results import make_data_result
+from results import make_data_result ,Result
 from datetime import datetime
 from functools import wraps
 import bcrypt
@@ -22,7 +22,7 @@ def login_status(func):
         # 檢查 session 中是否有 'username'，如果沒有，返回未登入的回應
         print(session.get('username'),'username ----------------------')
         if not session.get('username'):
-            return json.jsonify({'message': '未登入'}), 401  # HTTP 401: Unauthorized
+             return json.jsonify(errors.e2002)
         # 已登入，執行被裝飾的函數
         return func(*args, **kwargs)
     return my_decorator
@@ -77,7 +77,7 @@ def get_users():
     return json.jsonify(make_data_result(s))
 
 
-#新增資料  註冊
+#新增資料  註冊 
 @blueprint.route('/signup', methods=["POST"])
 def create_user():
     #1. 解析JSON或參數
@@ -107,7 +107,7 @@ def create_user():
     #3.2. 提交
     g.cursor().connection.commit()
    #4. 回傳產品
-    return json.jsonify(make_data_result(s))
+    return json.jsonify(Result(data=s))
 
 
 #修改資料  
@@ -139,7 +139,7 @@ def update_todo(user_id):
         return json.jsonify(errors.e1003)
     #3.1. 更新產品
     hashed_password = bcrypt.hashpw(obj.password.encode('utf-8'), bcrypt.gensalt())
-    # 3.1缺少未檢查username使否重複倒置sql error
+    # 3.1缺少未檢查username是否重複倒置sql error
     s = datahelper.update_user(user_id, obj.username, hashed_password.decode('utf-8'))
     #3.2. 提交
     g.cursor().connection.commit()
