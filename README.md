@@ -47,21 +47,21 @@
 
 ### 4\. MYSQL
 
-###       1.資料庫關聯
+###                  1.資料庫關聯
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/32bafc8c0b8b6240a3ad6ccdb4fd927528a6324bf03dd1e5.png)
 
 ### 5 呼叫api
 
-###       1.註冊 
+###                   1.註冊 
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/c4bdac17b26fef4c510a9b406af7548d379cfbd7a1afd4ce.png)
 
-###       2. 重複註冊
+###                   2. 重複註冊
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/73dc68a082b57cda15873726290d9f982c89698b3cf5bddc.png)
 
-###       3.登入
+###                   3.登入
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/3f86ef9a5eb01be95ff8a76e6ccf2e70f689f7c72f2f82f0.png)
 
