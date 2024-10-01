@@ -109,10 +109,12 @@
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/2d6a95ef494ded18b1aaf4ada8e97189d76eb5eff5252e27.png)
 
-### 6.2 api
+### 6.2 Python套件安裝
 
 ```plaintext
- Flask==3.0.3
- PyMySQL==1.1.0  
- dacite==1.8.1
+pip install   Flask==3.0.3
+ pip install PyMySQL==1.1.0  
+ pip install dacite==1.8.1
 ```
+### 6.2 執行api服務 執行restful目錄下的run.py
+        python run.py
