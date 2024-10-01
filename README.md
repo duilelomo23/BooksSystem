@@ -112,9 +112,9 @@
 ### 6.2 Python套件安裝
 
 ```plaintext
-pip install   Flask==3.0.3
+ pip install   Flask==3.0.3
  pip install PyMySQL==1.1.0  
  pip install dacite==1.8.1
 ```
 ### 6.2 執行api服務 執行restful目錄下的run.py
-        python run.py
+ python run.py
