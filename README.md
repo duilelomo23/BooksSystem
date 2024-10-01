@@ -97,7 +97,7 @@
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/01efcfbc01abe3234a25e25bd50e9f3b245d94f3927ca52e.png)
 
-### 4.按步驟創建todo\_db資料庫
+### 4.創建todo\_db資料庫
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/dbcdb6d6a11c24745d3fb3b98e053d1cb567c523bd011a0c.png)
 
