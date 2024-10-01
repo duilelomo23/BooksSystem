@@ -85,27 +85,27 @@
 
 ###      6.1  mysql
 
-###                                   1.下載sql檔案後開啟
+###      1.下載sql檔案後開啟
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/4bcd8c6a77005479265c2c0be3a2609699f671bd1517668b.png)
 
-###                                    2. 複製todo\_db.sql所有sql碼
+###      2. 複製todo\_db.sql所有sql碼
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/108f934c7380e16653935e57fcc58f76c016a19540a380c7.png)
 
-###                                      3.開啟MYSQL Workbench並登入
+###      3.開啟MYSQL Workbench並登入
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/01efcfbc01abe3234a25e25bd50e9f3b245d94f3927ca52e.png)
 
-###                                     4.按步驟創建todo\_db資料庫
+###      4.按步驟創建todo\_db資料庫
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/dbcdb6d6a11c24745d3fb3b98e053d1cb567c523bd011a0c.png)
 
-###                                     5.在資料庫空白處點右鍵刷新
+###      5.在資料庫空白處點右鍵刷新
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/ba182017252a986edf1e0aee91df2d55670d2bfaf20c1363.png)
 
-###                                    6. 對資料表點選右鍵選擇Select Rows獲取測試資料
+###      6. 對資料表點選右鍵選擇Select Rows獲取測試資料
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/2d6a95ef494ded18b1aaf4ada8e97189d76eb5eff5252e27.png)
 
