@@ -6,11 +6,11 @@
 
 | method | path | Function |
 | --- | --- | --- |
-| GET | /\<user\_id>/todos | 回傳所有待辦事項的列表。 |
-| GET | _/\<user\_id>/todos/\<todo\_id>_ | 查詢單個待辦事項的詳細信息。 |
-| POST | `/<user_id>/todos` | 新增一個待辦事項（傳入 JSON 格式，包含 \`title\` 和 \`description\`）。 |
-| PUT | /\<user\_id>/todos | 更新現有的待辦事項。 |
-| DELETE | /\<user\_id>/todos/\<todo\_id> | 刪除特定的待辦事項。 |
+| GET | /users/\<user\_id>/todos | 回傳所有待辦事項的列表。 |
+| GET | _/users/\<user\_id>/todos/\<todo\_id>_ | 查詢單個待辦事項的詳細信息。 |
+| POST | /users`/<user_id>/todos` | 新增一個待辦事項（傳入 JSON 格式，包含 \`title\` 和 \`description\`）。 |
+| PUT | /users/\<user\_id>/todos | 更新現有的待辦事項。 |
+| DELETE | /users/\<user\_id>/todos/\<todo\_id> | 刪除特定的待辦事項。 |
 
 ## 2: 使用者管理系統 API
 
@@ -89,7 +89,7 @@
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/4bcd8c6a77005479265c2c0be3a2609699f671bd1517668b.png)
 
-### 2. 開啟MYSQL Workbench並登入
+### 2\. 開啟MYSQL Workbench並登入
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/01efcfbc01abe3234a25e25bd50e9f3b245d94f3927ca52e.png)
 
@@ -105,12 +105,14 @@
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/ba182017252a986edf1e0aee91df2d55670d2bfaf20c1363.png)
 
-### 6. 對資料表點選右鍵選擇Select Rows獲取測試資料
+### 6\. 對資料表點選右鍵選擇Select Rows獲取測試資料
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/2d6a95ef494ded18b1aaf4ada8e97189d76eb5eff5252e27.png)
 
-###  6.2 api 
+### 6.2 api
 
-     Flask==3.0.3
-     PyMySQL==1.1.0  
-     dacite==1.8.1
+```plaintext
+ Flask==3.0.3
+ PyMySQL==1.1.0  
+ dacite==1.8.1
+```
