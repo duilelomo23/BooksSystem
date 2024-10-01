@@ -89,13 +89,13 @@
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/4bcd8c6a77005479265c2c0be3a2609699f671bd1517668b.png)
 
-### 2. 複製todo\_db.sql所有sql碼
-
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/108f934c7380e16653935e57fcc58f76c016a19540a380c7.png)
-
-### 3.開啟MYSQL Workbench並登入
+### 2. 開啟MYSQL Workbench並登入
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/01efcfbc01abe3234a25e25bd50e9f3b245d94f3927ca52e.png)
+
+### 3.複製todo\_db.sql所有sql碼
+
+![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/108f934c7380e16653935e57fcc58f76c016a19540a380c7.png)
 
 ### 4.創建todo\_db資料庫
 
@@ -109,10 +109,8 @@
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/2d6a95ef494ded18b1aaf4ada8e97189d76eb5eff5252e27.png)
 
-###      6.2 api 
+###  6.2 api 
 
-     Flask==3.0.3
-
-     PyMySQL==1.1.0  
-     config==0.5.1  
-     DateTime==5.5
+     Flask==3.0.3
+     PyMySQL==1.1.0  
+     dacite==1.8.1
