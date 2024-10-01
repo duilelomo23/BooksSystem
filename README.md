@@ -47,25 +47,25 @@
 
 ## 4\. MYSQL
 
-###      1.資料庫結構
+### 1.資料庫結構
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/32bafc8c0b8b6240a3ad6ccdb4fd927528a6324bf03dd1e5.png)
 
 ## 5 呼叫api範例
 
-###       5.1.註冊
+### 5.1.註冊
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/c4bdac17b26fef4c510a9b406af7548d379cfbd7a1afd4ce.png)
 
-###    5.2. 重複註冊
+### 5.2. 重複註冊
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/73dc68a082b57cda15873726290d9f982c89698b3cf5bddc.png)
 
-###    5.3.登入
+### 5.3.登入
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/3f86ef9a5eb01be95ff8a76e6ccf2e70f689f7c72f2f82f0.png)
 
-###    5.4.呼叫 get /users api   獲取所有使用者資料
+### 5.4.呼叫 get /users api   獲取所有使用者資料
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/6906b05c94e05c28a9cb430acefbe1baf9c90a5a09f50d76.png)
 
@@ -81,9 +81,38 @@
 
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/5f99e8a1a26cb45ecb364bbf782e4430d365bcb8b6828bec.png)
 
-## 6.安裝
+## 6.安裝和執行
 
-####      Flask==3.0.3  
+###      6.1  mysql
+
+###                                   1.下載sql檔案後開啟
+
+![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/4bcd8c6a77005479265c2c0be3a2609699f671bd1517668b.png)
+
+###                                    2. 複製todo\_db.sql所有sql碼
+
+![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/108f934c7380e16653935e57fcc58f76c016a19540a380c7.png)
+
+###                                      3.開啟MYSQL Workbench並登入
+
+![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/01efcfbc01abe3234a25e25bd50e9f3b245d94f3927ca52e.png)
+
+###                                     4.按步驟創建todo\_db資料庫
+
+![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/dbcdb6d6a11c24745d3fb3b98e053d1cb567c523bd011a0c.png)
+
+###                                     5.在資料庫空白處點右鍵刷新
+
+![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/ba182017252a986edf1e0aee91df2d55670d2bfaf20c1363.png)
+
+###                                    6. 對資料表點選右鍵選擇Select Rows獲取測試資料
+
+![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/2d6a95ef494ded18b1aaf4ada8e97189d76eb5eff5252e27.png)
+
+###      6.2 api 
+
+     Flask==3.0.3
+
      PyMySQL==1.1.0  
      config==0.5.1  
      DateTime==5.5
