@@ -41,7 +41,7 @@
 | GET | /\<user\_id>/book/\<book\_id> | 搜索 user\_id 是否擁有 book |
 | GET | /\<user\_id>/book/get\_all | 搜索 user\_id 所有購買紀錄 |
 | POST | /books | 新增書籍（傳入 \`title\`、\`author\`）。 |
-| POST | \<user\_id>/book/\<book\_id> | 添加購買紀錄 (user\\\_id 購買了 book\\\_id) |
+| POST | /\<user\_id>/book/\<book\_id> | 添加購買紀錄 (user\\\_id 購買了 book\\\_id) |
 | PUT | /books/\<book\_id> | 更新書籍（傳入 \`title\`不可重複、\`author\`）的詳細信息。 |
 | DELETE | /books/\<book\_id> | 刪除特定書籍。 |
 
