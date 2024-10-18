@@ -55,15 +55,15 @@
 
 ### 5.1.註冊
 
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/c4bdac17b26fef4c510a9b406af7548d379cfbd7a1afd4ce.png)
+![](https://github.com/duilelomo23/BooksSystem/blob/main/picture/%E8%A8%BB%E5%86%8A.png)
 
 ### 5.2. 重複註冊
 
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/73dc68a082b57cda15873726290d9f982c89698b3cf5bddc.png)
+![](https://github.com/duilelomo23/BooksSystem/blob/main/picture/%E9%87%8D%E8%A4%87%E8%A8%BB%E5%86%8A.png)
 
 ### 5.3.登入
 
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/3f86ef9a5eb01be95ff8a76e6ccf2e70f689f7c72f2f82f0.png)
+![](https://github.com/duilelomo23/BooksSystem/blob/main/picture/%E7%99%BB%E5%85%A5.png)
 
 ### 5.4.呼叫 get /users api   獲取所有使用者資料
 
@@ -71,15 +71,15 @@
 
 ### 5.5. 呼叫 get /user\_id/get\_all  獲取user\_id所有購買紀錄資料
 
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/2e8c259b6af745231161f99a33af83786a02eddd94bea0f6.png)
+![](https://github.com/duilelomo23/BooksSystem/blob/main/picture/%E7%8D%B2%E5%8F%96user%E6%89%80%E6%9C%89%E8%B3%BC%E8%B2%B7%E7%B4%80%E9%8C%84%E5%A4%9A%E5%B0%8D%E5%A4%9A%E9%97%9C%E8%81%AF.png)
 
 ### 5.6.登出
 
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/66fe9004b6f3af85909b093dbf33784950597520c047c25a.png)
+![](https://github.com/duilelomo23/BooksSystem/blob/main/picture/%E7%99%BB%E5%87%BA.png)
 
 ### 5.7.未登入呼叫API retrun error
 
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/5f99e8a1a26cb45ecb364bbf782e4430d365bcb8b6828bec.png)
+![](https://github.com/duilelomo23/BooksSystem/blob/main/picture/%E6%9C%AA%E7%99%BB%E5%85%A5%E5%91%BC%E5%8F%ABAPI.png)
 
 ## 6.安裝和執行
 
