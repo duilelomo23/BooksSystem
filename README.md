@@ -91,23 +91,23 @@
 
 ### 2\. 開啟MYSQL Workbench並登入
 
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/01efcfbc01abe3234a25e25bd50e9f3b245d94f3927ca52e.png)
+![](https://github.com/duilelomo23/BooksSystem/blob/main/pictureSQL/%E7%99%BB%E5%85%A5workbench.png)
 
 ### 3.複製todo\_db.sql所有sql碼
 
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/108f934c7380e16653935e57fcc58f76c016a19540a380c7.png)
+![](https://github.com/duilelomo23/BooksSystem/blob/main/pictureSQL/%E8%A4%87%E8%A3%BD%E6%89%80%E6%9C%89sql%E7%A2%BC.png)
 
 ### 4.創建todo\_db資料庫
 
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/dbcdb6d6a11c24745d3fb3b98e053d1cb567c523bd011a0c.png)
+![](https://github.com/duilelomo23/BooksSystem/blob/main/pictureSQL/%E6%96%B0%E5%A2%9Etodo_db.png)
 
 ### 5.在資料庫空白處點右鍵刷新
 
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/ba182017252a986edf1e0aee91df2d55670d2bfaf20c1363.png)
+![](https://github.com/duilelomo23/BooksSystem/blob/main/pictureSQL/%E5%88%B7%E6%96%B0.png)
 
 ### 6\. 對資料表點選右鍵選擇Select Rows獲取測試資料
 
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/2d6a95ef494ded18b1aaf4ada8e97189d76eb5eff5252e27.png)
+![](https://github.com/duilelomo23/BooksSystem/blob/main/pictureSQL/%E7%8D%B2%E5%8F%96%E6%B8%AC%E8%A9%A6%E8%B3%87%E6%96%99.png)
 
 ### 6.2 Python套件安裝
 
