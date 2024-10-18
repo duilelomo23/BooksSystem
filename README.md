@@ -49,7 +49,7 @@
 
 ### 1.資料庫結構
 
-![]([https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/32bafc8c0b8b6240a3ad6ccdb4fd927528a6324bf03dd1e5.png](https://github.com/duilelomo23/BooksSystem/blob/main/picture/sql%E8%B3%87%E6%96%99.png))
+![](https://github.com/duilelomo23/BooksSystem/blob/main/picture/sql%E8%B3%87%E6%96%99.png)
 
 ## 5 呼叫api範例
 
