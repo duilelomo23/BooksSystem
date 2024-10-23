@@ -157,7 +157,7 @@ def delete_user(user_id):
     except:
         pass
     #2. 驗證資料
-    #2.1. 驗證todo_id是否存在
+    #2.1. 驗證user_id是否存在
     if  isinstance(user_id, int) == False or \
           datahelper.is_user_id_existed(user_id) == False:
         return json.jsonify(errors.e4001) 
