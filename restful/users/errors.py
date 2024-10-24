@@ -9,7 +9,7 @@ e1002 = make_error_result("e1002","使用者名稱最少2個字或不可超過20
 e1003 = make_error_result("e1003","使用者密碼最少6碼最多20碼")
 e1004 = make_error_result("e1004","密碼只可使用數字或英文")
 e1005 = make_error_result("e1005", "username已存在")
-
+e1006 = make_error_result("e1006", "帳號只能輸入中文英文數字")
 #給get_user API使用的error
 e2001 = make_error_result("e2001","user_id不存在")
 e2002 = make_error_result("e2002", "登入才可呼叫API")

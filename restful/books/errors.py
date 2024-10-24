@@ -6,6 +6,7 @@ from results import make_error_result
 #給create_product API使用的error
 e1001 = make_error_result("e1001","title不可為空白")
 e1002 = make_error_result("e1002","title已存在")
+e1003 = make_error_result("e1003", "請輸入使用者ID")
 
 
 #給get_todo API使用的error

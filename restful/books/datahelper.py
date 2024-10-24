@@ -124,7 +124,7 @@ def is_book_id_existed(book_id):
     return ret_dict != None
 
 #搜尋update_book_record是否存在user id and book id
-def serch_book_and_user_id_update_existed(user_id):
+def search_book_and_user_id_existed(user_id):
     cur = g.cursor()
     # cur.execute(
     #     '''
@@ -148,7 +148,7 @@ def serch_book_and_user_id_update_existed(user_id):
     return ret_dict['record_count']
 
 #搜索 user_id 所有購買紀錄
-def serch_user_all_book(user_id):
+def search_user_all_book(user_id):
     cur = g.cursor()
     cur.execute(
         '''
@@ -194,11 +194,11 @@ def create_update_book_record(user_id, book_id, year):
     return ret_dict
 
 #搜尋指定 user_id 所有購買紀錄
-def serch_user_book_date(user_id ,book_id):
+def search_user_book_date(user_id ,book_id):
     cur = g.cursor()
     cur.execute(
         '''
-        select user.user_id ,user.username , book.title ,book.author ,book.year ,update_book_record.book_id, update_book_record.update_date 
+        select user.user_id, user.username , book.title, book.author, book.year, update_book_record.book_id, update_book_record.update_date 
         from update_book_record 
         inner join user on user.user_id = update_book_record.user_id 
         inner join book on book.book_id = update_book_record.book_id

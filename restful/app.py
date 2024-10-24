@@ -1,6 +1,5 @@
 from flask import Flask, g, json
 from flask.json.provider import DefaultJSONProvider
-
 import todos.apis
 import users.apis
 import books.apis

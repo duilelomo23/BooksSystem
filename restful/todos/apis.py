@@ -112,8 +112,8 @@ def get_todo(user_id, todo_id):
 
 
 #列出指定user_id所有待辦事項 
-@blueprint.route('/<user_id>/todos/<todo_id>/get_user_todos', methods=["GET"])
-def is_user_id_existed_todos(user_id, todo_id):
+@blueprint.route('/<user_id>/todos/get_user_todos', methods=["GET"])
+def is_user_id_existed_todos(user_id):
     #1. 解析JSON或參數
     #1.1. 解析user_id為int
     try:

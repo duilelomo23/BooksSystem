@@ -132,11 +132,11 @@ def get_user_updata_book_record(user_id, book_id):
     if  isinstance(book_id, int) == False or \
         isinstance(user_id, int) == False:
         return json.jsonify(errors.e2002)
-    if datahelper.serch_book_and_user_id_update_existed(user_id) == 0:
+    if datahelper.search_book_and_user_id_update_existed(user_id) == 0:
         return json.jsonify(errors.e2002)
 
     #3. 取得產品
-    s = datahelper.serch_user_book_date(user_id, book_id)
+    s = datahelper.search_user_book_date(user_id, book_id)
    #4. 回傳產品
 
     return json.jsonify(make_data_result(s))
@@ -151,15 +151,15 @@ def get_user_all_book_record(user_id):
     try:
         user_id = int(user_id)
     except:
-        pass
+        return json.jsonify(errors.e1003)
 
     #2. 驗證資料
     #2.1. 驗證todo_id是否存在
     if  isinstance(user_id, int) == False or \
-        datahelper.serch_book_and_user_id_update_existed(user_id) == False:
+        datahelper.search_book_and_user_id_existed(user_id) == False:
         return json.jsonify(errors.e2002)
     #3. 取得產品
-    s = datahelper.serch_user_all_book(user_id)
+    s = datahelper.search_user_all_book(user_id)
    #4. 回傳產品
     return json.jsonify(make_data_result(s))
 

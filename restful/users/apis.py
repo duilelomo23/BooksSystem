@@ -69,19 +69,23 @@ def user_signout():
 
 #查詢所有資料
 @blueprint.route('', methods=["GET"])
-@login_status
+# @login_status
 def get_users():
-    #1. 取得產品
-    s = datahelper.get_users()
-   #2. 回傳產品
-    return json.jsonify(make_data_result(s))
+    if 'username' in session:
+        #1. 取得產品
+        s = datahelper.get_users()
+    #2. 回傳產品
+        return json.jsonify(make_data_result(s))
+    return json.jsonify(errors.e2002)
 
 
 #新增資料  註冊 
 @blueprint.route('/signup', methods=["POST"])
 def create_user():
     #1. 解析JSON或參數
+    print(request.data, '---------------------')
     x = json.loads(request.data)
+    #使用from_dict把字典轉換成物件
     obj = from_dict(dataclasses.CreateUser, x, config=config)
     #2. 驗證資料
     #2.1. 名稱 密碼 不可為空白
@@ -92,14 +96,16 @@ def create_user():
         return json.jsonify(errors.e1002)
     if len(obj.password) < 6 or len(obj.password) > 20:
         return json.jsonify(errors.e1003)
-    #不可傳入特殊符號  缺少判斷是否為文字
-    if not re.match("^[a-zA-Z0-9]*$", obj.username):
-        return json.jsonify(errors.e1004), 400
+    #帳號只能傳入中英數字  當條件為 False 執行 error
+    if not re.match("^[a-zA-Z0-9\u4e00-\u9fff]*$", obj.username):
+        return json.jsonify(errors.e1006)
+    #密碼只能傳入英數  當條件為 False 執行 error
     if not re.match("^[a-zA-Z0-9]*$", obj.password):
-        return json.jsonify(errors.e1004), 400
+        return json.jsonify(errors.e1004)
     #3. 建立產品
     #3.1 密碼加密
     hashed_password = bcrypt.hashpw(obj.password.encode('utf-8'), bcrypt.gensalt())
+    print(hashed_password)
     #3.2. 建立產品
     s = datahelper.create_user(obj.username, hashed_password.decode('utf-8'))
     if s == False:
@@ -157,7 +163,7 @@ def delete_user(user_id):
     except:
         pass
     #2. 驗證資料
-    #2.1. 驗證user_id是否存在
+    #2.1. 驗證todo_id是否存在
     if  isinstance(user_id, int) == False or \
           datahelper.is_user_id_existed(user_id) == False:
         return json.jsonify(errors.e4001) 
