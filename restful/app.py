@@ -33,7 +33,7 @@ def before_request_func():
         return g._cursor
     g.cursor = get_cursor
 
-    
+ #每次請求結束後執行清理操作   
 @app.teardown_request
 def teardown_request_func(exc):
     cur = g.get("_cursor", None)
